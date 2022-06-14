@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FEWD - Weather Journal App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Load Google Fonts -->  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Weather by Zipcode</h1>
+    </header>
+    <div id="container">
+    <div id="weatherRequest">
+      <div>
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" placeholder="Enter zip code here"/> 
+      </div>
+        <div>
+        <label for="feelings">Feelings: </label>
+        <textarea id="feelings"></textarea>
+        <button id="generate">Generate</button>
+      </div>
+    </div>
+        <div id="entryHolder">
+            <label for="date">Date: </label><div id="date"></div>
+            <label for="temp">Temperature: </label><div id="temp"></div>
+            <label for="content">Content: </label><div id="content"></div>
+        </div>
+  </div>
+      </main>
+  <footer class="page__footer">
+    <p>(c) 2022 Udacity</p>
+  </footer>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

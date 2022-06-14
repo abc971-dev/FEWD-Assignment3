@@ -1,0 +1,29 @@
+h1{
+    font-family: 'Fira Sans', serif;
+}
+
+body{font-family: 'Montserrat', sans-serif}
+
+#container{
+    width:30vw;
+    padding:0.5rem;
+    display:grid;
+    grid-template-rows: 40vh;
+    justify-content: space-evenly;
+    border:1px solid #787878;
+    border-radius: 1rem;
+}
+#weatherRequest{display:flex;flex-direction:column;}
+
+
+#entryHolder{
+    display:flex;
+    flex-direction:column;
+    padding:0.5 rem;
+    background-color: gainsboro;
+    border: 1px groove #797979;
+}
+
+button{border: radius 0.25em;padding:0.25rem;font-family: 'Roboto';background-color: #7380c6;}
+
+label{font-weight:bold;padding:0.25rem}
