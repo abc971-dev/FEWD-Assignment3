@@ -16,3 +16,6 @@ A styles.css stylesheet
 ### Technologies/languages used
 Javascript, NodeJS with the CORS and body-Parser modules, HTML, CSS
 
+### Credits
+Styling inspired by https://primefaces.org/primeblocks-ng/#/
+
