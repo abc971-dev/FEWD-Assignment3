@@ -1,4 +1,5 @@
 // Setup empty JS object to act as endpoint for all routes
+
 // Express to run server and routes
 
 // Start up an instance of app
@@ -45,7 +46,7 @@ app.post('/add', function(req,res) {
       date: newData.date,
       userResponse: newData.userResponse
     };
-    projectData.push(newEntry);
+    projectData.unshift(newEntry); //Adds the new element at the beginning of the array
     res.send(projectData);
 });
 
