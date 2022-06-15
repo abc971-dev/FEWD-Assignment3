@@ -14,5 +14,5 @@ A styles.css stylesheet
 
 ## Technical information
 ### Technologies/languages used
-Javascript, NodeJS, CORS, HTML, CSS
+Javascript, NodeJS with the CORS and body-Parser modules, HTML, CSS
 
