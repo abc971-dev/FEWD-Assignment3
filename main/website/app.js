@@ -81,7 +81,11 @@ const getAllProjectData = async (url='') => {
 
 
 function showError(error,route){
-  document.getElementById('errorMessage').style.display='block'
+  document.getElementById('errorMessage').style.display='block';
+  //Hide previous results when an error occurs
+  document.getElementById('date').innerHTML='';
+  document.getElementById('temp').innerHTML='';
+  document.getElementById('content').innerHTML ='';
   let message='';
 switch (route){
   case('weatherData'):
