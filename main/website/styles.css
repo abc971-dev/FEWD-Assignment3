@@ -1,28 +1,66 @@
+main{
+    height:80vh;
+    background:url('noaa-99F4mC79j1I-unsplash.jpg') 30% 45%;
+    opacity:0.8;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h1{
     font-family: 'Fira Sans', serif;
-    color:#4242ee;
+    color:#262020;
 }
 
 body{font-family: 'Montserrat', sans-serif}
 
-#container{
-    width:50vw;
-    min-height:40vh;
-    padding:0.75rem;
-    justify-content: space-between;
-    display:flex;
-    flex-direction: column;
-    border:1px solid #787878;
+ #container{
+        display:grid;
+        grid-template-areas: 
+        "hd"
+        "form"
+        "display";
+        grid-template-rows: 60px 130px 130px;
+        grid-gap:15px;
+        border-radius:0.8rem;
     box-shadow: 0 4px 10px #00000008,0 0 2px #0000000f,0 2px 6px #0000001f;
+    background:#ffffff;
+    opacity: 0.8;    
+    padding:0.75rem;
 }
-#weatherRequest{display:flex;flex-direction:row;justify-content: space-evenly;align-items:flex-start}
+
+@media(min-width:600px){
+    #weatherRequest{
+        grid-area:form;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items:flex-start
+    }
+
+}
+
+#weatherRequest{
+    grid-area:form;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items:flex-start
+}
+
+#title{
+    grid-area: hd;
+}
+
+
 
 
 #dataDisplay{
+    grid-area:display;
     display:flex;
     flex-direction:column;
     padding:0.5rem;
-    background-color: gainsboro;
+    background-color:  #c9b5b5;
     border: 1px groove #797979;
 }
 
@@ -31,15 +69,16 @@ button{
     padding:0.5em;
     box-sizing:border-box;
     font-family: 'Roboto';
-    background-color:#6366F1;
-    border:1px #6366F1 solid;
+    background-color:#262020;
+    border:1px#262020 solid;
     color:#ffffff;
     font-size:1rem;
 }
 
 button:hover{
-    background-color: #4F46E5;
-    border-color:#4F46E5;
+    background-color: #837070;
+    border-color: #837070;
+    color:#000000;
 }
 
 label{font-weight:bold}

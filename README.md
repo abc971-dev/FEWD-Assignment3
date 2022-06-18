@@ -17,5 +17,6 @@ A styles.css stylesheet
 Javascript, NodeJS with the CORS and body-Parser modules, HTML, CSS
 
 ### Credits
-Styling inspired by https://primefaces.org/primeblocks-ng/#/
+Background image: Photo by <a href="https://unsplash.com/@noaa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">NOAA</a> on <a href="https://unsplash.com/s/photos/weather-app?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 
