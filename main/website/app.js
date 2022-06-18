@@ -69,7 +69,7 @@ const getAllProjectData = async (url='') => {
     const allData = await response.json(); 
     //Adding the values to the information display section under the form
     document.getElementById('date').innerHTML = allData.date;
-    document.getElementById('temp').innerHTML = allData.temperature+' degrees';
+    document.getElementById('temp').innerHTML = Math.round(allData.temperature)+' degrees';
     document.getElementById('content').innerHTML = allData.userResponse;
     
   }catch(error) {
