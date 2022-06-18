@@ -1,5 +1,5 @@
 // Personal API Key for OpenWeatherMap API, base URL and country code
-const apiKey ='e358b0cb5ba17c3e3eba24d078448c62&units=metric'; //Metric units used
+const apiKey ='e358b0cb5ba17c3e3eba24d078448c62&units=imperial'; //Imperial units used
 const apiBaseURL = 'https://api.openweathermap.org/data/2.5/forecast?zip=';
 const countryCode = 'US';
 
@@ -66,12 +66,12 @@ const getAllProjectData = async (url='') => {
     const response = await fetch('/all')
       
   try {
-    const projectData = await response.json(); 
+    const allData = await response.json(); 
     //Adding the values to the information display section under the form
-    document.getElementById('date').innerHTML = projectData[0].date;
-    document.getElementById('temp').innerHTML = projectData[0].temperature+' °C';
-    document.getElementById('content').innerHTML = projectData[0].userResponse;
-    return projectData;
+    document.getElementById('date').innerHTML = allData.date;
+    document.getElementById('temp').innerHTML = allData.temperature+' degrees';
+    document.getElementById('content').innerHTML = allData.userResponse;
+    
   }catch(error) {
   console.log("error", error);
   showError(error,'getAll');

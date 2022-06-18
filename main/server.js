@@ -1,5 +1,5 @@
 // Setup empty JS object to act as endpoint for all routes
-const projectData = new Array;
+const projectData = {};
 
 // Express to run server and routes
 
@@ -40,15 +40,13 @@ app.get('/all', function (request, res) {
 
 // Post Route
 
-app.post('/add', function(req,res) {
-    let newData = req.body;
-    let newEntry = {
-      temperature: newData.temperature,
-      date: newData.date,
-      userResponse: newData.userResponse
-    };
-    projectData.unshift(newEntry); //Adds the new element at the beginning of the array
-    res.send(projectData);
-});
+app.post('/add', addData);
 
+function addData(req,res){
+  
+    projectData['temperature']=req.body.temperature;
+    projectData['date']=req.body.date;
+    projectData['userResponse']=req.body.userResponse;
 
+  res.send(projectData);
+}
